@@ -6,6 +6,7 @@ import PrimaryButton from "./PrimaryButton";
 import SecondaryButton from "./SecondaryButton";
 import classNames from "classnames";
 import { FindWordDifference } from "./helpers";
+import { BASE_URL } from "./config";
 
 const WordsPerQuiz = 10;
 
@@ -85,7 +86,7 @@ function Session({ showSummary, sessionSummary, setSessionSummary }) {
       <SessionProgress sessionSummary={sessionSummary} numberOfQuestions={WordsPerQuiz} className="session-progress" />
 
       <audio controls autoPlay ref={audioPlayer} className="audio-player">
-        <source src={`/audio/${currentWord.word}.mp3`} type="audio/mp3" />
+        <source src={`${BASE_URL}/audio/${currentWord.word}.mp3`} type="audio/mp3" />
       </audio>
       <div>
         Part of Speech: <span className="bold">{currentWord.partOfSpeech}</span>
