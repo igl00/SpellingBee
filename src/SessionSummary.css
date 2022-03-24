@@ -1,0 +1,60 @@
+.summary {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 480px;
+  margin-top: 16px;
+}
+
+.summary-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+}
+
+.summary-list-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.summary-number {
+  font-size: 20px;
+  line-height: 24px;
+  width: 32px;
+  display: inline-block;
+  text-align: center;
+}
+
+.summary-word {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.summary-word.correct {
+  color: #92e261;
+}
+
+.summary-word.incorrect {
+  color: #e28061;
+}
+
+.summary-user-answer {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.summary-score {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.summary-next-button {
+  width: 200px;
+  margin-top: 16px;
+}

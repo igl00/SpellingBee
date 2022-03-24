@@ -1,0 +1,20 @@
+.session-progress {
+  display: flex;
+  flex-direction: row;
+}
+
+.session-progress-item {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background-color: lightgrey;
+  border-radius: 4px;
+}
+
+.session-progress-item.correct {
+  background-color: #92e261;
+}
+
+.session-progress-item.incorrect {
+  background-color: #e28061;
+}
